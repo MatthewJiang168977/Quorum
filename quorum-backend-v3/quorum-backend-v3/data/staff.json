@@ -1,0 +1,42 @@
+[
+  {
+    "id": "staff-001",
+    "name": "Rachel Torres",
+    "role": "chief_of_staff",
+    "email": "rtorres@house.gov",
+    "permissions": ["view_all", "approve_drafts", "approve_batches", "manage_staff", "view_trends", "view_security_flags"],
+    "dashboard_modules": ["approval_queue", "trend_overview", "staff_workload", "security_alerts", "sentiment_map"]
+  },
+  {
+    "id": "staff-002",
+    "name": "Kevin Okafor",
+    "role": "legislative_correspondent",
+    "email": "kokafor@house.gov",
+    "permissions": ["view_assigned", "edit_drafts", "send_approved", "view_batches", "manage_contacts"],
+    "dashboard_modules": ["smart_inbox", "draft_editor", "batch_manager", "contact_lookup"]
+  },
+  {
+    "id": "staff-003",
+    "name": "Maria Santos",
+    "role": "caseworker",
+    "email": "msantos@house.gov",
+    "permissions": ["view_casework", "create_cases", "contact_agencies", "update_cases", "view_deadlines"],
+    "dashboard_modules": ["case_tracker", "agency_contacts", "deadline_calendar", "case_templates"]
+  },
+  {
+    "id": "staff-004",
+    "name": "David Park",
+    "role": "scheduler",
+    "email": "dpark@house.gov",
+    "permissions": ["view_calendar", "manage_events", "send_invites", "view_meeting_requests"],
+    "dashboard_modules": ["calendar_view", "meeting_requests", "event_planner", "conflict_detector"]
+  },
+  {
+    "id": "staff-005",
+    "name": "Jasmine Williams",
+    "role": "communications_director",
+    "email": "jwilliams@house.gov",
+    "permissions": ["view_social", "approve_social_drafts", "manage_press", "view_sentiment"],
+    "dashboard_modules": ["social_feed", "press_inbox", "sentiment_map", "talking_points"]
+  }
+]

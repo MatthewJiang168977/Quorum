@@ -1,0 +1,67 @@
+{
+  "district": "IL-13",
+  "period": "2026-03-01 to 2026-03-27",
+  "total_messages": 2847,
+  "total_cases_opened": 134,
+  "total_cases_resolved": 98,
+  "avg_response_time_hours": 4.2,
+  "topic_distribution": [
+    {"topic": "healthcare", "count": 612, "pct": 21.5, "trend": "rising", "change_pct": 34},
+    {"topic": "immigration", "count": 498, "pct": 17.5, "trend": "rising", "change_pct": 340},
+    {"topic": "infrastructure", "count": 384, "pct": 13.5, "trend": "stable", "change_pct": 2},
+    {"topic": "education", "count": 327, "pct": 11.5, "trend": "stable", "change_pct": -5},
+    {"topic": "veterans", "count": 241, "pct": 8.5, "trend": "stable", "change_pct": 8},
+    {"topic": "tax_irs", "count": 213, "pct": 7.5, "trend": "rising", "change_pct": 45},
+    {"topic": "social_security", "count": 185, "pct": 6.5, "trend": "stable", "change_pct": 3},
+    {"topic": "data_privacy", "count": 156, "pct": 5.5, "trend": "spike", "change_pct": 890},
+    {"topic": "agriculture", "count": 128, "pct": 4.5, "trend": "rising", "change_pct": 22},
+    {"topic": "other", "count": 103, "pct": 3.5, "trend": "stable", "change_pct": 0}
+  ],
+  "sentiment_by_week": [
+    {"week": "2026-03-03", "positive": 34, "neutral": 41, "negative": 25},
+    {"week": "2026-03-10", "positive": 28, "neutral": 38, "negative": 34},
+    {"week": "2026-03-17", "positive": 22, "neutral": 35, "negative": 43},
+    {"week": "2026-03-24", "positive": 19, "neutral": 32, "negative": 49}
+  ],
+  "anomalies": [
+    {
+      "type": "spike",
+      "topic": "data_privacy",
+      "detected_at": "2026-03-25T08:00:00Z",
+      "description": "890% increase in data privacy messages linked to HR-6622 markup announcement. 73% appear to be from organized campaign (template language detected).",
+      "severity": "high"
+    },
+    {
+      "type": "spike",
+      "topic": "immigration",
+      "detected_at": "2026-03-20T08:00:00Z",
+      "description": "340% increase in immigration inquiries following new USCIS processing delays reported in local media.",
+      "severity": "high"
+    },
+    {
+      "type": "sentiment_shift",
+      "topic": "healthcare",
+      "detected_at": "2026-03-22T08:00:00Z",
+      "description": "Healthcare sentiment shifted from 60% positive to 72% negative after Medicare Advantage plan changes announced.",
+      "severity": "medium"
+    }
+  ],
+  "geographic_hotspots": [
+    {"zip": "62704", "count": 487, "top_topic": "healthcare", "sentiment_avg": -0.42},
+    {"zip": "62702", "count": 412, "top_topic": "education", "sentiment_avg": -0.18},
+    {"zip": "62703", "count": 389, "top_topic": "immigration", "sentiment_avg": -0.55},
+    {"zip": "62701", "count": 334, "top_topic": "infrastructure", "sentiment_avg": 0.12},
+    {"zip": "62629", "count": 221, "top_topic": "agriculture", "sentiment_avg": -0.31},
+    {"zip": "62711", "count": 198, "top_topic": "data_privacy", "sentiment_avg": -0.67},
+    {"zip": "62712", "count": 156, "top_topic": "veterans", "sentiment_avg": -0.38}
+  ],
+  "daily_volume": [
+    {"date": "2026-03-21", "count": 87},
+    {"date": "2026-03-22", "count": 94},
+    {"date": "2026-03-23", "count": 112},
+    {"date": "2026-03-24", "count": 203},
+    {"date": "2026-03-25", "count": 341},
+    {"date": "2026-03-26", "count": 189},
+    {"date": "2026-03-27", "count": 147}
+  ]
+}

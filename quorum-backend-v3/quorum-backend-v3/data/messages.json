@@ -1,0 +1,541 @@
+[
+  {
+    "id": "msg-001",
+    "type": "email",
+    "channel": "email",
+    "from": {
+      "name": "Sarah Chen",
+      "email": "sarah.chen@gmail.com",
+      "phone": null,
+      "address": "142 Oak Street, Springfield, IL 62704",
+      "zip": "62704",
+      "district": "IL-13"
+    },
+    "subject": "Urgent: My mother's Medicare coverage was denied",
+    "body": "Dear Representative,\n\nI am writing because my 78-year-old mother, Lin Chen, was denied coverage for a critical heart procedure by Medicare last week. Her cardiologist at Memorial Medical Center says she needs the procedure within 60 days. We've been going back and forth with CMS for two weeks and keep getting transferred. Case reference: MCR-2026-4419.\n\nPlease, we need your help. She is a veteran's spouse and has paid into this system her entire life.\n\nSincerely,\nSarah Chen",
+    "received_at": "2026-03-27T09:12:00Z",
+    "ai_tags": {
+      "topics": ["healthcare", "medicare", "casework"],
+      "urgency": "critical",
+      "sentiment": "negative",
+      "sentiment_score": -0.82,
+      "intent": "casework_request",
+      "agency": "CMS",
+      "case_reference": "MCR-2026-4419",
+      "requires_response": true,
+      "suggested_route": "caseworker"
+    },
+    "ai_draft": {
+      "body": "Dear Ms. Chen,\n\nThank you for reaching out about your mother's Medicare coverage denial. I understand how stressful this must be, and I want you to know that my office takes these matters very seriously.\n\nI have assigned a caseworker to look into case MCR-2026-4419 immediately. We will contact CMS on your mother's behalf to understand the basis for the denial and explore all available options for appeal.\n\nYou can expect to hear from my casework team within 2 business days. In the meantime, please gather any additional medical documentation from her cardiologist that supports the medical necessity of the procedure.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.91,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-002",
+    "type": "email",
+    "channel": "email",
+    "from": {
+      "name": "Marcus Webb",
+      "email": "mwebb@springfieldchamber.org",
+      "phone": "(217) 555-0198",
+      "address": "800 E Monroe St, Springfield, IL 62701",
+      "zip": "62701",
+      "district": "IL-13"
+    },
+    "subject": "Request for Federal Infrastructure Funding Support",
+    "body": "Dear Representative,\n\nOn behalf of the Springfield Chamber of Commerce, I am writing to request your support for the Route 66 Heritage Corridor infrastructure project. The project would repair 14 miles of roadway, add protected bike lanes, and modernize stormwater systems.\n\nWe have secured $12M in state matching funds and are seeking $28M from the Federal Highway Administration. A letter of support from your office would strengthen our application significantly.\n\nWe'd welcome the opportunity to brief your team. Can we schedule a meeting?\n\nBest regards,\nMarcus Webb\nPresident, Springfield Chamber of Commerce",
+    "received_at": "2026-03-27T08:45:00Z",
+    "ai_tags": {
+      "topics": ["infrastructure", "transportation", "economic_development"],
+      "urgency": "normal",
+      "sentiment": "positive",
+      "sentiment_score": 0.65,
+      "intent": "meeting_request",
+      "agency": "FHWA",
+      "case_reference": null,
+      "requires_response": true,
+      "suggested_route": "scheduler"
+    },
+    "ai_draft": {
+      "body": "Dear Mr. Webb,\n\nThank you for bringing the Route 66 Heritage Corridor project to my attention. Infrastructure investment in our district is a top priority for my office, and this project sounds like it would deliver real benefits to Springfield.\n\nI'd be happy to have my team review the project details and discuss a potential letter of support. My scheduler will be in touch to arrange a meeting at your convenience.\n\nThank you for your continued work on behalf of Springfield's business community.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.88,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-003",
+    "type": "voicemail",
+    "channel": "phone",
+    "from": {
+      "name": "Diana Flores",
+      "email": null,
+      "phone": "(217) 555-0347",
+      "address": "2201 S MacArthur Blvd, Springfield, IL 62704",
+      "zip": "62704",
+      "district": "IL-13"
+    },
+    "subject": "[Voicemail Transcription] Immigration case follow-up",
+    "body": "[AI Transcription - Confidence: 94%]\n\nHi, this is Diana Flores calling again about my husband's green card application. It's been 14 months and we still haven't heard anything from USCIS. Our case number is IOE-0912-4478-2203. I called your office three weeks ago and someone said they'd look into it, but I haven't heard back. My husband can't work right now and we have two kids. Please, someone call me back. My number is 217-555-0347. Thank you.",
+    "received_at": "2026-03-27T10:03:00Z",
+    "ai_tags": {
+      "topics": ["immigration", "casework", "follow_up"],
+      "urgency": "critical",
+      "sentiment": "negative",
+      "sentiment_score": -0.76,
+      "intent": "casework_followup",
+      "agency": "USCIS",
+      "case_reference": "IOE-0912-4478-2203",
+      "requires_response": true,
+      "suggested_route": "caseworker",
+      "flags": ["repeat_contact", "escalation_risk"]
+    },
+    "ai_draft": {
+      "body": "[Phone callback script]\n\nMs. Flores, this is [Name] from [Representative]'s office. I'm calling to follow up on your husband's green card application, case IOE-0912-4478-2203.\n\nI want to apologize for the delay in getting back to you. I've personally submitted an inquiry to USCIS on your behalf and have requested an expedited status update.\n\nI'll be your direct point of contact going forward. Here's my direct line: [number]. I'll call you with an update by [date], even if it's just to let you know we're still waiting on USCIS.",
+      "confidence": 0.85,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-004",
+    "type": "email",
+    "channel": "email",
+    "from": {
+      "name": "Robert Kim",
+      "email": "r.kim.edu@gmail.com",
+      "phone": null,
+      "address": "455 W Jefferson St, Springfield, IL 62702",
+      "zip": "62702",
+      "district": "IL-13"
+    },
+    "subject": "Thank you for co-sponsoring HR-4521",
+    "body": "Representative,\n\nAs a high school teacher in Springfield, I wanted to personally thank you for co-sponsoring the Educator Retention and Support Act (HR-4521). This legislation addresses real issues we face — burnout, underfunding, and lack of mental health resources for educators.\n\nI've been teaching for 22 years and have seen dozens of talented colleagues leave. This bill gives us hope.\n\nThank you for standing with teachers.\n\nRobert Kim\nSpringfield High School",
+    "received_at": "2026-03-27T07:30:00Z",
+    "ai_tags": {
+      "topics": ["education", "legislation", "HR-4521"],
+      "urgency": "low",
+      "sentiment": "positive",
+      "sentiment_score": 0.92,
+      "intent": "thank_you",
+      "agency": null,
+      "case_reference": null,
+      "requires_response": true,
+      "suggested_route": "legislative_correspondent"
+    },
+    "ai_draft": {
+      "body": "Dear Mr. Kim,\n\nThank you so much for taking the time to write. Hearing from educators like you is exactly why I co-sponsored the Educator Retention and Support Act.\n\nAfter 22 years in the classroom, your perspective is invaluable. Teachers are the backbone of our community, and you deserve policies that recognize your dedication.\n\nI will continue fighting for this legislation and will keep you updated on its progress. Please don't hesitate to reach out if there's anything else my office can do.\n\nWith gratitude,\n[Office of Representative]",
+      "confidence": 0.94,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-005",
+    "type": "social_media",
+    "channel": "twitter",
+    "from": {
+      "name": "@SpringfieldMom42",
+      "email": null,
+      "phone": null,
+      "address": null,
+      "zip": null,
+      "district": "IL-13"
+    },
+    "subject": "[Twitter Mention]",
+    "body": "@RepIL13 My kids' school has had NO hot water for 3 weeks!! Springfield USD says they're waiting on federal funds. Meanwhile kids are washing hands in cold water in winter. This is unacceptable. DO SOMETHING. #SpringfieldSchools",
+    "received_at": "2026-03-27T11:22:00Z",
+    "ai_tags": {
+      "topics": ["education", "infrastructure", "public_health"],
+      "urgency": "high",
+      "sentiment": "negative",
+      "sentiment_score": -0.88,
+      "intent": "complaint",
+      "agency": "DOE",
+      "case_reference": null,
+      "requires_response": true,
+      "suggested_route": "legislative_correspondent",
+      "flags": ["public_facing", "viral_risk"]
+    },
+    "ai_draft": {
+      "body": "[Twitter Reply - 280 char limit]\n\nThank you for bringing this to our attention. No child should go without basic necessities at school. My office is reaching out to Springfield USD today to understand the situation and help expedite a solution. Please DM us your contact info so we can follow up directly.",
+      "confidence": 0.87,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-006",
+    "type": "email",
+    "channel": "email",
+    "from": {
+      "name": "Linda Park",
+      "email": "lpark@springfieldpta.org",
+      "phone": "(217) 555-0412",
+      "address": "1100 N Grand Ave E, Springfield, IL 62702",
+      "zip": "62702",
+      "district": "IL-13"
+    },
+    "subject": "Invitation: Town Hall on School Lunch Program Changes",
+    "body": "Dear Representative,\n\nThe Springfield PTA Coalition is hosting a community town hall on proposed changes to the National School Lunch Program on April 15th at the Springfield Convention Center.\n\nWe expect 200+ parents and educators. We would be honored if you or a member of your staff could attend and share your position on the proposed nutrition standards.\n\nEvent Details:\nDate: April 15, 2026\nTime: 6:00 PM - 8:00 PM\nLocation: Springfield Convention Center, Hall B\n\nPlease let us know by April 5th.\n\nBest,\nLinda Park\nPresident, Springfield PTA Coalition",
+    "received_at": "2026-03-27T06:15:00Z",
+    "ai_tags": {
+      "topics": ["education", "nutrition", "community_event"],
+      "urgency": "normal",
+      "sentiment": "positive",
+      "sentiment_score": 0.71,
+      "intent": "event_invitation",
+      "agency": "USDA",
+      "case_reference": null,
+      "requires_response": true,
+      "suggested_route": "scheduler",
+      "event": {
+        "date": "2026-04-15",
+        "time": "18:00",
+        "location": "Springfield Convention Center, Hall B",
+        "rsvp_deadline": "2026-04-05",
+        "expected_attendance": 200
+      }
+    },
+    "ai_draft": {
+      "body": "Dear Ms. Park,\n\nThank you for the invitation to the town hall on school lunch program changes. Nutrition and the health of our children is a priority for my office.\n\nI'm checking my schedule and will confirm attendance by your April 5th deadline. In the meantime, could you share the agenda and any briefing materials so we can be fully prepared?\n\nThank you for your leadership in organizing this important community conversation.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.90,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-007",
+    "type": "email",
+    "channel": "email",
+    "from": {
+      "name": "James Morton",
+      "email": "jmorton.vet@yahoo.com",
+      "phone": "(217) 555-0289",
+      "address": "3344 Veterans Pkwy, Springfield, IL 62704",
+      "zip": "62704",
+      "district": "IL-13"
+    },
+    "subject": "VA disability claim has been pending for 11 months",
+    "body": "To whom it may concern,\n\nI'm a disabled veteran (Army, 2004-2012, two tours in Afghanistan). I filed a VA disability claim 11 months ago for PTSD and a service-connected knee injury. My claim number is VA-CLM-2025-88134.\n\nI've called the VA hotline dozens of times. Each time I'm told it's 'in review.' I can barely walk some days and the nightmares haven't stopped.\n\nI served my country. Please help me get what I was promised.\n\nJames Morton\nSgt. (Ret.), U.S. Army",
+    "received_at": "2026-03-27T08:02:00Z",
+    "ai_tags": {
+      "topics": ["veterans", "disability", "casework"],
+      "urgency": "critical",
+      "sentiment": "negative",
+      "sentiment_score": -0.91,
+      "intent": "casework_request",
+      "agency": "VA",
+      "case_reference": "VA-CLM-2025-88134",
+      "requires_response": true,
+      "suggested_route": "caseworker",
+      "flags": ["veteran", "mental_health_mention", "high_priority"]
+    },
+    "ai_draft": {
+      "body": "Dear Sergeant Morton,\n\nThank you for your service to our country, and thank you for reaching out to my office. An 11-month wait on your disability claim is unacceptable, and I want to help.\n\nI am personally directing my veterans caseworker to submit a congressional inquiry to the VA regarding claim VA-CLM-2025-88134 today. We will push for an expedited review.\n\nYou will hear from my casework team within 48 hours with a status update. If you need immediate support, please also contact the Veterans Crisis Line at 988 (press 1).\n\nYou served our country with honor. We will fight for you.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.93,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-008",
+    "type": "form_submission",
+    "channel": "web_form",
+    "from": {
+      "name": "Anika Patel",
+      "email": "anika.p@hotmail.com",
+      "phone": "(217) 555-0501",
+      "address": "678 S 6th St, Springfield, IL 62703",
+      "zip": "62703",
+      "district": "IL-13"
+    },
+    "subject": "[Web Form] IRS Refund Held - Need Help",
+    "body": "Topic: Tax Issue\nUrgency: High\n\nMessage: I filed my 2025 taxes in January and my refund of $4,200 has been held by the IRS for 'additional review' for 3 months now. I'm a single mother of three and I need this money for rent. The IRS phone line puts me on hold for 2+ hours every time. My SSN ends in 4478. Can your office contact the IRS for me?",
+    "received_at": "2026-03-27T09:45:00Z",
+    "ai_tags": {
+      "topics": ["tax", "IRS", "casework"],
+      "urgency": "high",
+      "sentiment": "negative",
+      "sentiment_score": -0.73,
+      "intent": "casework_request",
+      "agency": "IRS",
+      "case_reference": null,
+      "requires_response": true,
+      "suggested_route": "caseworker",
+      "flags": ["financial_hardship"]
+    },
+    "ai_draft": {
+      "body": "Dear Ms. Patel,\n\nThank you for contacting our office about your delayed tax refund. I understand how important this is for you and your family.\n\nMy casework team will reach out to the IRS Taxpayer Advocate Service on your behalf. To proceed, we'll need you to sign a privacy release form (IRS Form 8821) authorizing our office to inquire on your behalf.\n\nA member of my team will call you within 2 business days to walk you through the form and get this process started.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.89,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-009",
+    "type": "email",
+    "channel": "email",
+    "from": {
+      "name": "Carlos Reyes",
+      "email": "creyes@springfieldfire.gov",
+      "phone": "(217) 555-0633",
+      "address": "900 E Adams St, Springfield, IL 62703",
+      "zip": "62703",
+      "district": "IL-13"
+    },
+    "subject": "FEMA Reimbursement Delays for March Tornado Response",
+    "body": "Representative,\n\nThe Springfield Fire Department responded to the March 8th tornado that damaged 47 homes in the south side. We submitted our FEMA Public Assistance application (PA-IL-2026-0341) on March 12th and still haven't received acknowledgment.\n\nWe're out $380,000 in emergency response costs. Our department budget is stretched thin and we need these reimbursements to maintain readiness.\n\nCan your office help expedite?\n\nChief Carlos Reyes\nSpringfield Fire Department",
+    "received_at": "2026-03-27T07:58:00Z",
+    "ai_tags": {
+      "topics": ["disaster_relief", "FEMA", "casework", "public_safety"],
+      "urgency": "high",
+      "sentiment": "negative",
+      "sentiment_score": -0.58,
+      "intent": "casework_request",
+      "agency": "FEMA",
+      "case_reference": "PA-IL-2026-0341",
+      "requires_response": true,
+      "suggested_route": "caseworker",
+      "flags": ["government_official", "budget_impact"]
+    },
+    "ai_draft": {
+      "body": "Dear Chief Reyes,\n\nThank you for your department's heroic response to the March 8th tornado. The delays in FEMA reimbursement are concerning, and I want to help resolve this.\n\nMy office will submit a congressional inquiry to FEMA Region V today regarding application PA-IL-2026-0341. I will also raise this with the FEMA Administrator's office given the urgent budget implications.\n\nPlease send any supporting documentation to my casework team. We'll keep you updated on progress.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.92,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-010",
+    "type": "email",
+    "channel": "email",
+    "from": {
+      "name": "Betty Liu",
+      "email": "betty.liu.88@gmail.com",
+      "phone": "(217) 555-0177",
+      "address": "211 S Grand Ave W, Springfield, IL 62704",
+      "zip": "62704",
+      "district": "IL-13"
+    },
+    "subject": "Social Security says I was overpaid — I wasn't!",
+    "body": "Dear Representative,\n\nI'm 72 years old and Social Security is saying I was overpaid $8,400 and they want to reduce my monthly benefit by $350 until it's repaid. This would devastate me — I live on $1,400/month.\n\nI believe this is an error. I reported my husband's death in 2024 and they adjusted my benefits correctly at the time. Now they're saying the adjustment was wrong. My claim number is SSA-OVP-2026-11234.\n\nI don't understand how this happened and I can't afford a lawyer. Please help.\n\nBetty Liu",
+    "received_at": "2026-03-27T10:30:00Z",
+    "ai_tags": {
+      "topics": ["social_security", "casework", "senior_services"],
+      "urgency": "critical",
+      "sentiment": "negative",
+      "sentiment_score": -0.85,
+      "intent": "casework_request",
+      "agency": "SSA",
+      "case_reference": "SSA-OVP-2026-11234",
+      "requires_response": true,
+      "suggested_route": "caseworker",
+      "flags": ["senior_citizen", "financial_hardship", "possible_agency_error"]
+    },
+    "ai_draft": {
+      "body": "Dear Ms. Liu,\n\nI'm sorry to hear about this distressing situation with Social Security. An overpayment claim that could reduce your benefits by $350/month is serious, and my office will help.\n\nMy caseworker will contact the Social Security Administration on your behalf regarding case SSA-OVP-2026-11234. In the meantime, you have the right to request a waiver of the overpayment and to appeal the decision. We can help you with both.\n\nA member of my team will call you within 2 business days. Please have any correspondence from SSA available.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.90,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-011",
+    "type": "email",
+    "channel": "email",
+    "from": {
+      "name": "Tom Bradley",
+      "email": "tbradley@bradleyfarms.com",
+      "phone": "(217) 555-0744",
+      "address": "RR 2 Box 445, Chatham, IL 62629",
+      "zip": "62629",
+      "district": "IL-13"
+    },
+    "subject": "Farm Bill concerns — impact on small family farms",
+    "body": "Representative,\n\nI'm a third-generation corn and soybean farmer on 600 acres outside Chatham. I'm writing about the proposed Farm Bill changes that would restructure crop insurance subsidies.\n\nUnder the current proposal, small farms like mine would see premium increases of 30-40%. We're already dealing with drought conditions and rising input costs. This could put us under.\n\nI've talked to at least 15 other farmers in the district who feel the same way. Would you consider hosting a roundtable with local farmers before the markup?\n\nTom Bradley\nBradley Family Farms",
+    "received_at": "2026-03-27T06:30:00Z",
+    "ai_tags": {
+      "topics": ["agriculture", "farm_bill", "legislation", "crop_insurance"],
+      "urgency": "normal",
+      "sentiment": "negative",
+      "sentiment_score": -0.52,
+      "intent": "policy_feedback",
+      "agency": "USDA",
+      "case_reference": null,
+      "requires_response": true,
+      "suggested_route": "legislative_correspondent",
+      "flags": ["constituent_group", "meeting_request"]
+    },
+    "ai_draft": {
+      "body": "Dear Mr. Bradley,\n\nThank you for sharing your concerns about the Farm Bill's impact on family farms in our district. Protecting our agricultural community is one of my top priorities.\n\nThe idea of a farmer roundtable is excellent. I'll have my scheduler work with your office to find a date that works for you and other interested farmers.\n\nIn the meantime, I want you to know that I share your concern about the proposed crop insurance changes and am actively working with the Agriculture Committee to ensure small farms are protected.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.88,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-012",
+    "type": "voicemail",
+    "channel": "phone",
+    "from": {
+      "name": "Unknown Caller",
+      "email": null,
+      "phone": "(217) 555-0999",
+      "address": null,
+      "zip": null,
+      "district": "IL-13"
+    },
+    "subject": "[Voicemail Transcription] Threatening message",
+    "body": "[AI Transcription - Confidence: 87%]\n\nYeah, I just want to say that your representative is a complete disgrace. Voting for that garbage bill last week. You people don't care about real Americans. I'm coming to your office tomorrow and I'm not leaving until someone listens to me. You'll regret ignoring us.",
+    "received_at": "2026-03-27T11:45:00Z",
+    "ai_tags": {
+      "topics": ["complaint", "general_dissatisfaction"],
+      "urgency": "critical",
+      "sentiment": "negative",
+      "sentiment_score": -0.95,
+      "intent": "complaint",
+      "agency": null,
+      "case_reference": null,
+      "requires_response": false,
+      "suggested_route": "chief_of_staff",
+      "flags": ["possible_threat", "security_review", "walk_in_expected"]
+    },
+    "ai_draft": null,
+    "workflow_status": "flagged",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-013",
+    "type": "email",
+    "channel": "email",
+    "from": {
+      "name": "Dr. Priya Sharma",
+      "email": "psharma@siumed.edu",
+      "phone": "(217) 555-0821",
+      "address": "801 N Rutledge St, Springfield, IL 62702",
+      "zip": "62702",
+      "district": "IL-13"
+    },
+    "subject": "Rural broadband is a healthcare crisis",
+    "body": "Dear Representative,\n\nAs the Chief of Telemedicine at SIU School of Medicine, I'm writing to share data that I believe demands urgent attention.\n\nSince 2024, we've seen a 340% increase in telemedicine appointments across central Illinois. However, 23% of our patients in rural areas cannot maintain stable video connections due to inadequate broadband infrastructure.\n\nThis isn't a convenience issue — it's a healthcare access issue. We've had patients miss critical follow-ups for cancer treatment because their connection dropped.\n\nI'd welcome the opportunity to present our data to your office and discuss federal broadband funding options.\n\nDr. Priya Sharma\nChief of Telemedicine, SIU School of Medicine",
+    "received_at": "2026-03-27T09:18:00Z",
+    "ai_tags": {
+      "topics": ["broadband", "healthcare", "rural_access", "telemedicine"],
+      "urgency": "high",
+      "sentiment": "negative",
+      "sentiment_score": -0.45,
+      "intent": "policy_advocacy",
+      "agency": "FCC",
+      "case_reference": null,
+      "requires_response": true,
+      "suggested_route": "legislative_correspondent",
+      "flags": ["subject_matter_expert", "data_available", "meeting_request"]
+    },
+    "ai_draft": {
+      "body": "Dear Dr. Sharma,\n\nThank you for sharing this important data on the intersection of broadband access and healthcare delivery. The statistics you've cited are deeply concerning.\n\nI would very much welcome a briefing from your team. The connection between rural broadband infrastructure and healthcare outcomes is exactly the kind of evidence-based policy insight that informs my work on these issues.\n\nMy scheduler will reach out to arrange a meeting. If possible, please bring the data on dropped connections and missed appointments — this could be powerful testimony for upcoming appropriations discussions.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.91,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-014",
+    "type": "email",
+    "channel": "email_batch",
+    "from": {
+      "name": "[Batch: 47 constituents]",
+      "email": "various",
+      "phone": null,
+      "address": null,
+      "zip": "various",
+      "district": "IL-13"
+    },
+    "subject": "[Batch] Opposition to HR-6622 - Data Privacy Act",
+    "body": "[AI Summary of 47 messages]\n\nForty-seven constituents wrote opposing HR-6622 (Federal Data Privacy Act). Key themes:\n\n1. Concerns about government overreach in data collection (mentioned in 38/47 messages)\n2. Fear that small businesses can't comply with new requirements (mentioned in 22/47)\n3. Belief that the bill doesn't go far enough on Big Tech accountability (mentioned in 15/47)\n4. Template language detected in 31/47 messages (likely organized campaign)\n\nSentiment distribution: 89% negative, 11% mixed\nTop zip codes: 62704 (14), 62702 (11), 62703 (9)",
+    "received_at": "2026-03-27T12:00:00Z",
+    "ai_tags": {
+      "topics": ["data_privacy", "legislation", "HR-6622", "organized_campaign"],
+      "urgency": "normal",
+      "sentiment": "negative",
+      "sentiment_score": -0.67,
+      "intent": "policy_opposition",
+      "agency": null,
+      "case_reference": null,
+      "requires_response": true,
+      "suggested_route": "legislative_correspondent",
+      "flags": ["batch_message", "organized_campaign", "template_detected"]
+    },
+    "ai_draft": {
+      "body": "[Batch Response Template]\n\nDear [Constituent Name],\n\nThank you for sharing your views on HR-6622, the Federal Data Privacy Act. I appreciate you taking the time to make your voice heard.\n\nI take data privacy very seriously and share many of your concerns. I am carefully reviewing the bill and considering amendments that would address [small business compliance burdens / government data collection safeguards — select based on constituent's specific concern].\n\nYour input is valuable as I weigh this important legislation. I will keep your views in mind as the bill moves through committee.\n\nSincerely,\n[Office of Representative]",
+      "confidence": 0.86,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  },
+  {
+    "id": "msg-015",
+    "type": "social_media",
+    "channel": "twitter",
+    "from": {
+      "name": "@DowntownSPI",
+      "email": null,
+      "phone": null,
+      "address": null,
+      "zip": null,
+      "district": "IL-13"
+    },
+    "subject": "[Twitter Mention - Positive]",
+    "body": "@RepIL13 Just attended the small business workshop your office organized. Incredible resources! Already started my SBA loan application. Thank you for supporting downtown Springfield entrepreneurs! #SmallBizSaturday #SpringfieldIL",
+    "received_at": "2026-03-27T14:15:00Z",
+    "ai_tags": {
+      "topics": ["small_business", "community_event", "SBA"],
+      "urgency": "low",
+      "sentiment": "positive",
+      "sentiment_score": 0.94,
+      "intent": "thank_you",
+      "agency": "SBA",
+      "case_reference": null,
+      "requires_response": true,
+      "suggested_route": "legislative_correspondent",
+      "flags": ["public_facing", "shareable"]
+    },
+    "ai_draft": {
+      "body": "[Twitter Reply]\n\nSo glad you found the workshop helpful! Supporting Springfield's small businesses and entrepreneurs is at the heart of what we do. Best of luck with your SBA application — reach out if you need any assistance!",
+      "confidence": 0.95,
+      "status": "pending_approval"
+    },
+    "workflow_status": "new",
+    "assigned_to": null,
+    "read": false
+  }
+]

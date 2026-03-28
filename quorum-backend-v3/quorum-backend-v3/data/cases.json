@@ -1,0 +1,124 @@
+[
+  {
+    "id": "case-001",
+    "message_id": "msg-001",
+    "constituent": "Sarah Chen",
+    "subject": "Medicare coverage denial for heart procedure",
+    "agency": "CMS",
+    "agency_reference": "MCR-2026-4419",
+    "status": "open",
+    "priority": "critical",
+    "assigned_to": "staff-003",
+    "opened_at": "2026-03-27T09:30:00Z",
+    "deadline": "2026-04-10T17:00:00Z",
+    "sla_days": 14,
+    "days_open": 0,
+    "last_activity": "2026-03-27T09:30:00Z",
+    "notes": [
+      {"timestamp": "2026-03-27T09:30:00Z", "author": "system", "text": "Case auto-created from constituent email. Medicare denial for heart procedure. 60-day medical urgency window."}
+    ],
+    "next_steps": "Submit congressional inquiry to CMS. Request expedited review citing medical urgency."
+  },
+  {
+    "id": "case-002",
+    "message_id": "msg-003",
+    "constituent": "Diana Flores",
+    "subject": "USCIS green card application — 14 month delay",
+    "agency": "USCIS",
+    "agency_reference": "IOE-0912-4478-2203",
+    "status": "open",
+    "priority": "critical",
+    "assigned_to": "staff-003",
+    "opened_at": "2026-03-06T14:00:00Z",
+    "deadline": "2026-04-03T17:00:00Z",
+    "sla_days": 28,
+    "days_open": 21,
+    "last_activity": "2026-03-06T14:20:00Z",
+    "notes": [
+      {"timestamp": "2026-03-06T14:00:00Z", "author": "staff-003", "text": "Initial inquiry submitted to USCIS."},
+      {"timestamp": "2026-03-06T14:20:00Z", "author": "system", "text": "Privacy release form sent to constituent."}
+    ],
+    "next_steps": "Follow up with USCIS. Constituent called back — no update provided. ESCALATION NEEDED.",
+    "flags": ["overdue_followup", "repeat_contact"]
+  },
+  {
+    "id": "case-003",
+    "message_id": "msg-007",
+    "constituent": "James Morton",
+    "subject": "VA disability claim pending 11 months",
+    "agency": "VA",
+    "agency_reference": "VA-CLM-2025-88134",
+    "status": "open",
+    "priority": "critical",
+    "assigned_to": "staff-003",
+    "opened_at": "2026-03-27T08:15:00Z",
+    "deadline": "2026-04-10T17:00:00Z",
+    "sla_days": 14,
+    "days_open": 0,
+    "last_activity": "2026-03-27T08:15:00Z",
+    "notes": [
+      {"timestamp": "2026-03-27T08:15:00Z", "author": "system", "text": "Case auto-created. Veteran with PTSD and knee injury. 11-month claim delay. High priority."}
+    ],
+    "next_steps": "Submit congressional inquiry to VA. Flag as veteran mental health priority."
+  },
+  {
+    "id": "case-004",
+    "message_id": "msg-008",
+    "constituent": "Anika Patel",
+    "subject": "IRS refund held for 3 months",
+    "agency": "IRS",
+    "agency_reference": null,
+    "status": "open",
+    "priority": "high",
+    "assigned_to": "staff-003",
+    "opened_at": "2026-03-27T10:00:00Z",
+    "deadline": "2026-04-17T17:00:00Z",
+    "sla_days": 21,
+    "days_open": 0,
+    "last_activity": "2026-03-27T10:00:00Z",
+    "notes": [
+      {"timestamp": "2026-03-27T10:00:00Z", "author": "system", "text": "Case auto-created. Single mother, $4,200 refund held. Need IRS Form 8821 signed before inquiry."}
+    ],
+    "next_steps": "Send privacy release form (8821). Contact IRS Taxpayer Advocate after form returned."
+  },
+  {
+    "id": "case-005",
+    "message_id": "msg-009",
+    "constituent": "Carlos Reyes",
+    "subject": "FEMA reimbursement delay — March tornado response",
+    "agency": "FEMA",
+    "agency_reference": "PA-IL-2026-0341",
+    "status": "open",
+    "priority": "high",
+    "assigned_to": "staff-003",
+    "opened_at": "2026-03-27T08:30:00Z",
+    "deadline": "2026-04-10T17:00:00Z",
+    "sla_days": 14,
+    "days_open": 0,
+    "last_activity": "2026-03-27T08:30:00Z",
+    "notes": [
+      {"timestamp": "2026-03-27T08:30:00Z", "author": "system", "text": "Case auto-created. Fire dept out $380k. Application submitted March 12, no FEMA acknowledgment."}
+    ],
+    "next_steps": "Submit inquiry to FEMA Region V. Escalate to FEMA Administrator's office."
+  },
+  {
+    "id": "case-006",
+    "message_id": "msg-010",
+    "constituent": "Betty Liu",
+    "subject": "SSA overpayment dispute — $8,400 claim",
+    "agency": "SSA",
+    "agency_reference": "SSA-OVP-2026-11234",
+    "status": "open",
+    "priority": "critical",
+    "assigned_to": "staff-003",
+    "opened_at": "2026-03-27T10:45:00Z",
+    "deadline": "2026-04-10T17:00:00Z",
+    "sla_days": 14,
+    "days_open": 0,
+    "last_activity": "2026-03-27T10:45:00Z",
+    "notes": [
+      {"timestamp": "2026-03-27T10:45:00Z", "author": "system", "text": "Case auto-created. 72-year-old on $1,400/month facing $350/month benefit reduction. Possible SSA error after spouse death reporting."}
+    ],
+    "next_steps": "Contact SSA. Advise constituent on overpayment waiver request (SSA-632) and appeal rights."
+  }
+]
