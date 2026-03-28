@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { TrendingUp, TrendingDown, Clock, Smile, BarChart3 } from "lucide-react";
+import { TrendingUp, TrendingDown, Clock, Smile, BarChart3, Users } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
 import { apiGet } from "../lib/api";
 
@@ -142,6 +142,6 @@ export default function ExecDashboard() {
           </ResponsiveContainer>
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
