@@ -1,100 +1,130 @@
-# Quorum-
+# Quorum
 
-📌 ABOUT QUORUM
+**AI-native casework engine that sees, hears, and understands cases.**
 
-Quorum is an AI-native casework engine that sees, hears, and understands cases.
+Quorum transforms messy inputs — text, voice, images — into clear decisions and actions, instantly. Not a dashboard. A decision system.
 
-It transforms messy inputs (text, voice, image) into clear decisions and actions — instantly.
+[Live Demo](https://quorum-demo.vercel.app/)
 
-👉 Not a dashboard. A decision system.
+---
 
-❓ WHY WE CHOSE THIS TOPIC
-Teams are drowning in cases and messages
-Critical workflows are still manual and slow
-Legacy tools create delays, errors, and low trust
+## Team
 
-👉 Gap we identified:
-AI can analyze — but no system actually executes decisions.
+| Name | Role | Focus |
+|------|------|-------|
+| **Matthew Jiang** | Backend & AI Integration | Node.js, MongoDB, Gemini orchestration, API design |
+| **Joy Wang** | Frontend & Product | React, UX, pitch, product strategy |
 
-So we built one.
+Both studying at NYU.
 
-⚡ Key Features
-🟢 Multimodal intake (text / voice / image)
-🧠 AI case parsing (auto-tag + summarize)
-🔥 Smart scoring (urgency, risk, impact)
-🤖 Agentic assignment (who + why)
-⚙️ 1-click workflows (assign / approve / review)
-👥 Role-based views
-🔍 Explainable decisions
-🖥️ Product Philosophy
+---
 
-One screen. One action. One decision.
+## Why we built this
 
-🏗️ Architecture
+Government offices and legal teams are drowning in cases. Congress receives 80M messages per year. Staff spend most of their time on admin instead of helping people. Legacy tools are decades old — creating delays, errors, and low public trust.
 
-Frontend
+**The gap we identified:** AI can analyze, but no system actually executes decisions. So we built one.
 
-React
+---
 
-Backend
+## Key features
 
-Node.js (Express)
-MongoDB
+- **Multimodal intake** — text, voice, and image input processed through a single AI pipeline
+- **AI case parsing** — auto-tag, summarize, and extract key information from any format
+- **Smart scoring** — urgency, risk, impact, and complexity scored on a 10-point scale
+- **Agentic assignment** — AI recommends the best employee with written reasoning based on expertise, caseload, and history
+- **1-click workflows** — assign, approve, escalate, or review with a single action
+- **Role-based views** — caseworker, manager, approver, and executive each see exactly what they need
+- **Explainable decisions** — every AI recommendation includes reasoning, not just a score
 
-AI Layer
+---
 
-Google Gemini (multimodal + agents)
-Agent orchestration workflows
-🔄 Workflow
-Submit case (text / voice / image)
-AI parses + extracts problem
-AI scores urgency + risk
-AI assigns best owner (with reasoning)
-User executes via 1-click
-System tracks + updates
-🎯 Target Users
-🏛 Government agencies
-⚖️ Legal teams
-🏢 Enterprise ops / compliance
-📈 Market Opportunity
-Legal tech: $30B+
-Workflow automation: fastest-growing segment
-💰 Business Model
-SaaS (per seat + per case)
-Government contracts
-Enterprise subscriptions
-🛠️ WHAT WE USED
-React
-Node.js + MongoDB
-Google Gemini (multimodal + agent orchestration)
-Google Cloud
-📚 WHAT WE LEARNED
-AI should take action, not just provide insights
-Simplicity > complexity
-Real workflows matter more than models
-Transparency builds trust
+## Architecture
 
-👉 The future of AI is decision systems, not dashboards.
+### Frontend
+React, Vite, TypeScript, Tailwind CSS, Framer Motion, Recharts
 
-🤝 Team & Contributors
-👤 Joy Wang
-Business & Technology Management, NYU
-Product, Frontend, UX, Pitch
-👤 Matthew Jiang
-Computer Science, NYU
-Backend, Systems, AI Integration
-⭐ Acknowledgments
-NYC Open Data / Gemini AI Hackathon
-Google Gemini API
-🔮 Vision
+### Backend
+Node.js (Express), MongoDB Atlas, Mongoose, 35+ REST endpoints across 8 route groups
 
-“Every organization runs on decisions.
-Today, those decisions are fragmented across people, tools, and time.”
+### AI layer
+Google Gemini 2.5 Flash (multimodal + structured output), 3-agent parallel orchestration pipeline, Google GenAI SDK
 
-Quorum brings them together — and executes them.
+### Infrastructure
+Google Cloud Run, GitHub
 
-⭐ Final Note
+---
 
-We’re not building better dashboards.
-We’re replacing them.
-https://quorum-demo.vercel.app/
+## How it works
+
+1. **Submit** — a case arrives via text, voice, image, or document
+2. **Parse** — Gemini analyzes the input and extracts the problem, topics, sentiment, and urgency
+3. **Score** — severity agent rates urgency, impact, and complexity on a 10-point scale
+4. **Assign** — employee matcher recommends the best team member with written reasoning
+5. **Execute** — staff review and act with 1-click workflows
+6. **Track** — the system monitors deadlines, SLAs, and satisfaction
+
+All three AI agents run in parallel. One API call triggers the full pipeline.
+
+---
+
+## Target users
+
+- Government agencies (congressional offices, state/local government)
+- Legal teams (casework, compliance, constituent services)
+- Enterprise operations and compliance teams
+
+---
+
+## Market opportunity
+
+| Segment | Size |
+|---------|------|
+| TAM — U.S. Federal IT budget | $75B |
+| SAM — Admin software (federal, state, local, NGOs) | $3.2B |
+| SOM — Congressional offices + state + local | $98M |
+
+Legal tech alone is a $30B+ market. Workflow automation is the fastest-growing segment.
+
+---
+
+## Business model
+
+- SaaS subscriptions (per seat + per case volume)
+- Government contracts
+- Enterprise subscriptions with tiered AI usage
+
+---
+
+## Tech stack
+
+| Layer | Technologies |
+|-------|-------------|
+| Frontend | React, Vite, TypeScript, Tailwind CSS, Framer Motion |
+| Backend | Node.js, Express, MongoDB Atlas, Mongoose |
+| AI | Google Gemini 2.5 Flash, GenAI SDK, 3-agent orchestration |
+| Infrastructure | Google Cloud Run, GitHub |
+
+---
+
+## What we learned
+
+- AI should take action, not just provide insights
+- Simplicity beats complexity — one API call, three agents, full orchestration
+- Real workflows matter more than models
+- Transparency builds trust — every decision needs an explanation
+
+---
+
+## Vision
+
+> Every organization runs on decisions. Today, those decisions are fragmented across people, tools, and time. Quorum brings them together — and executes them.
+
+We're not building better dashboards. We're replacing them.
+
+---
+
+## Acknowledgments
+
+- NYC Open Data Week / Google Gemini AI Hackathon
+- Google Gemini API and GenAI SDK
