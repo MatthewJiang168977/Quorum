@@ -27,7 +27,7 @@ export default function OutcomePrediction() {
       <CaseClassificationVisual />
 
       {/* AI Outcome Predictions */}
-      <div className="surface-card rounded-xl p-5">
+      <div data-workflow-tour="outcome-predictions" className="surface-card rounded-xl p-5">
         <div className="flex items-center gap-2 mb-1">
           <Sparkles size={14} className="text-primary" />
           <h3 className="text-sm font-semibold text-foreground">AI outcome predictions</h3>

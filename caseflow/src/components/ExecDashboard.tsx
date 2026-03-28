@@ -44,7 +44,7 @@ export default function ExecDashboard() {
         <p className="text-sm text-muted-foreground">Operational throughput and material mix across the portfolio</p>
       </motion.div>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div data-workflow-tour="exec-kpis" className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {metrics.map((m, i) => {
           const Icon = m.icon;
           const isPositive = m.change > 0;
@@ -78,7 +78,7 @@ export default function ExecDashboard() {
         })}
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div data-workflow-tour="exec-charts" className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}

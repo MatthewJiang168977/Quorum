@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import TopBar from "@/components/TopBar";
 import {
   channelBreakdown,
@@ -33,6 +33,8 @@ import {
   Tooltip as PieTooltip,
 } from "recharts";
 import { ArrowUpRight, Bot, Mail, MessageSquare, Clock, CheckCircle2, Sparkles, TrendingUp } from "lucide-react";
+import ExecutiveComplianceSection from "@/components/ExecutiveComplianceSection";
+import WorkflowRunChoiceDialog from "@/components/WorkflowRunChoiceDialog";
 
 const tabs = [
   { id: "overview", label: "Overview" },
@@ -64,11 +66,13 @@ function KpiIcon({ kind }: { kind: (typeof homeKpis)[number]["icon"] }) {
 }
 
 export default function HomeDashboard() {
+  const navigate = useNavigate();
   const [role, setRole] = useState<Role>("caseworker");
   const [tab, setTab] = useState<(typeof tabs)[number]["id"]>("overview");
   const [workflowRunning, setWorkflowRunning] = useState(false);
+  const [runChoiceOpen, setRunChoiceOpen] = useState(false);
 
-  const runWorkflow = useCallback(() => {
+  const runWorkflowNormal = useCallback(() => {
     setWorkflowRunning(true);
     WORKFLOW_ORDER.forEach((r, i) => {
       window.setTimeout(() => {
@@ -86,14 +90,29 @@ export default function HomeDashboard() {
     });
   }, []);
 
+  const openRunWorkflowChoice = useCallback(() => {
+    setRunChoiceOpen(true);
+  }, []);
+
   return (
     <div className="min-h-screen pb-20">
       <TopBar
         role={role}
         onRoleChange={setRole}
         onNewCase={() => toast.message("New case", { description: "Open workspace to create a case." })}
-        onRunWorkflow={runWorkflow}
+        onRunWorkflow={openRunWorkflowChoice}
         workflowRunning={workflowRunning}
+      />
+
+      <WorkflowRunChoiceDialog
+        open={runChoiceOpen}
+        onOpenChange={setRunChoiceOpen}
+        isWorkspace={false}
+        onGuided={() => {
+          navigate("/workspace", { state: { startGuidedTour: true } });
+          toast.message("Opening workspace", { description: "Guided workflow with highlights will start." });
+        }}
+        onNormal={runWorkflowNormal}
       />
 
       <main className="mx-auto max-w-[1600px] px-4 py-8 sm:px-6">
@@ -416,6 +435,8 @@ export default function HomeDashboard() {
             </div>
           </motion.div>
         </section>
+
+        {role === "exec" && <ExecutiveComplianceSection />}
       </main>
     </div>
   );

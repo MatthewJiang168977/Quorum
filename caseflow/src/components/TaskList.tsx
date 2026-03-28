@@ -32,6 +32,7 @@ export default function TaskList({ role }: TaskListProps) {
 
   return (
     <motion.div
+      data-workflow-tour="task-sidebar"
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       className="surface-card rounded-xl p-5"

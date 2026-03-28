@@ -49,6 +49,7 @@ export default function ManagerAssignment() {
 
   return (
     <motion.div
+      data-workflow-tour="manager-assignment"
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       className="glass rounded-2xl overflow-hidden"

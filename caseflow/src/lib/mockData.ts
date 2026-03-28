@@ -223,6 +223,45 @@ export const recentMessagesFeed = [
   { id: "m5", subject: "Scholarship program inquiry", from: "Parent coalition", channel: "Email", sentiment: "positive" as const, priority: "low" as const, ago: "1h ago" },
 ];
 
+/** Executive home — legal guardrails & key-case alignment (illustrative; not legal advice) */
+export const execLegalCompliance = {
+  laws: {
+    state: [
+      "State housing & habitability chapters (e.g. warranty of habitability, notice-to-cure)",
+      "Local charter / municipal code for inspections & administrative fines",
+    ],
+    federal: [
+      "Fair Housing Act (42 U.S.C. § 3601 et seq.) where dwelling or program access is at issue",
+      "ADA / Rehabilitation Act (Title II / §504) for public facilities & services",
+      "Privacy: FOIA / applicable confidentiality rules for constituent records",
+    ],
+    administrative: [
+      "HUD PIH & program notices; EPA administrative orders for environmental clusters",
+      "State AG guidance on constituent services & ex parte boundaries",
+    ],
+  },
+  procedures: [
+    "Hearings: timely notice, record, written findings — align briefing to active docket deadlines",
+    "Code enforcement: inspection → cure / abatement ladder per local ordinance",
+    "Escalations: preserve record & privilege; route high-exposure matters per policy council playbook",
+  ],
+  ethics: [
+    "Competence & diligence — supervise AI outputs on legal conclusions (Model Rules 1.1 / 5.3 analogs)",
+    "Confidentiality & conflicts — document screening for overlapping constituents and departments",
+    "Candor to tribunal / decision-makers — no misleading omissions in board or council materials",
+  ],
+  keyCases: [
+    { id: "QR-1042", label: "Habitability / code cluster", note: "Drives inspection SOP and tenant-comms templates" },
+    { id: "QR-1046", label: "ADA / public facility", note: "Board memo + remediation timeline for oversight" },
+  ],
+};
+
+export const execAiDraftPresets = [
+  { id: "ed1", label: "Weekly portfolio digest", hint: "KPIs + risk flags" },
+  { id: "ed2", label: "Council talking points", hint: "3 bullets, neutral tone" },
+  { id: "ed3", label: "Risk memo to board", hint: "QR-1042 / QR-1046 cross-ref" },
+] as const;
+
 export interface CalendarEvent {
   id: string;
   title: string;
