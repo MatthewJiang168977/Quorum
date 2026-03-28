@@ -3,6 +3,44 @@ export type Status = "pending" | "in-progress" | "needs-approval" | "resolved";
 export type Role = "caseworker" | "manager" | "approver" | "exec";
 export type Taxonomy = "Housing" | "Environmental" | "Benefits" | "Infrastructure" | "Compliance" | "Permits" | "Employment" | "Civil Rights";
 
+/** Groupings for approver case-classification mind-map (each taxonomy maps to one bucket) */
+export const classificationBuckets: {
+  id: string;
+  label: string;
+  topics: Taxonomy[];
+  primaryHex: string;
+  childHex: string;
+}[] = [
+  {
+    id: "housing",
+    label: "Housing & social",
+    topics: ["Housing", "Civil Rights"],
+    primaryHex: "#1e40af",
+    childHex: "#93c5fd",
+  },
+  {
+    id: "economic",
+    label: "Benefits & workforce",
+    topics: ["Benefits", "Employment"],
+    primaryHex: "#c2410c",
+    childHex: "#fcd34d",
+  },
+  {
+    id: "risk",
+    label: "Compliance & environment",
+    topics: ["Compliance", "Environmental"],
+    primaryHex: "#b91c1c",
+    childHex: "#fca5a5",
+  },
+  {
+    id: "works",
+    label: "Infrastructure & permits",
+    topics: ["Infrastructure", "Permits"],
+    primaryHex: "#0f766e",
+    childHex: "#5eead4",
+  },
+];
+
 export const taxonomyColors: Record<Taxonomy, { bg: string; text: string; border: string }> = {
   Housing: { bg: "bg-orange-50", text: "text-orange-700", border: "border-orange-200" },
   Environmental: { bg: "bg-emerald-50", text: "text-emerald-700", border: "border-emerald-200" },

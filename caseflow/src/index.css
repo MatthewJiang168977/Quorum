@@ -1,84 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@9..40,400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@9..40,400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Brand palette: #819A91 #A7C1A8 #D1D8BE #EEEFE0 */
+/* High-contrast sage / dark green theme (aligned with #819A91 family, pushed darker) */
 @layer base {
   :root {
-    --background: 72 29% 91%;
-    --foreground: 155 22% 18%;
+    --background: 72 24% 88%;
+    --foreground: 160 38% 9%;
 
-    --card: 72 25% 84%;
-    --card-foreground: 155 22% 18%;
+    --card: 72 26% 96%;
+    --card-foreground: 160 38% 9%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 155 22% 18%;
+    --popover: 72 28% 98%;
+    --popover-foreground: 160 38% 9%;
 
-    --primary: 152 11% 55%;
-    --primary-foreground: 72 29% 97%;
+    --primary: 156 32% 28%;
+    --primary-foreground: 72 40% 98%;
 
-    --secondary: 125 18% 71%;
-    --secondary-foreground: 155 25% 22%;
+    --secondary: 132 22% 42%;
+    --secondary-foreground: 72 40% 98%;
 
-    --muted: 72 22% 88%;
-    --muted-foreground: 155 12% 38%;
+    --muted: 72 16% 82%;
+    --muted-foreground: 155 24% 26%;
 
-    --accent: 125 18% 71%;
-    --accent-foreground: 155 25% 20%;
+    --accent: 152 28% 36%;
+    --accent-foreground: 72 40% 98%;
 
-    --destructive: 0 72% 48%;
+    --destructive: 0 74% 38%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 72 18% 78%;
-    --input: 72 18% 78%;
-    --ring: 152 11% 45%;
+    --border: 152 22% 48%;
+    --input: 152 22% 48%;
+    --ring: 156 32% 32%;
 
     --radius: 0.85rem;
 
-    --brand-deep: 152 11% 55%;
-    --brand-mid: 125 18% 71%;
-    --brand-pale: 72 25% 80%;
-    --brand-cream: 72 29% 91%;
+    --brand-deep: 156 32% 28%;
+    --brand-mid: 152 26% 38%;
+    --brand-pale: 72 22% 72%;
+    --brand-cream: 72 26% 88%;
 
-    --sage-50: 72 29% 96%;
-    --sage-100: 72 25% 88%;
-    --sage-200: 72 22% 82%;
-    --sage-300: 72 18% 72%;
-    --sage-400: 152 12% 52%;
-    --sage-500: 152 11% 45%;
-    --sage-600: 155 16% 36%;
-    --sage-700: 158 20% 28%;
-    --sage-800: 160 22% 20%;
-    --sage-900: 160 25% 14%;
+    --sage-50: 72 28% 95%;
+    --sage-100: 72 24% 88%;
+    --sage-200: 72 20% 78%;
+    --sage-300: 72 18% 64%;
+    --sage-400: 152 18% 44%;
+    --sage-500: 155 24% 32%;
+    --sage-600: 158 28% 24%;
+    --sage-700: 160 30% 18%;
+    --sage-800: 162 32% 13%;
+    --sage-900: 165 35% 9%;
 
-    --mint: 152 20% 48%;
-    --mint-light: 125 25% 88%;
+    --mint: 158 32% 36%;
+    --mint-light: 130 22% 82%;
 
-    --priority-high: 0 72% 48%;
-    --priority-medium: 38 85% 48%;
-    --priority-low: 152 10% 48%;
+    --priority-high: 0 76% 36%;
+    --priority-medium: 32 88% 40%;
+    --priority-low: 152 18% 38%;
 
-    --status-pending: 38 85% 48%;
-    --status-progress: 210 55% 48%;
-    --status-approval: 280 35% 50%;
-    --status-resolved: 152 11% 48%;
+    --status-pending: 32 88% 40%;
+    --status-progress: 210 55% 42%;
+    --status-approval: 280 38% 42%;
+    --status-resolved: 156 32% 32%;
 
-    --glass-bg: 72 29% 97% / 0.82;
-    --glass-border: 72 20% 100% / 0.55;
-    --glass-shadow: 152 20% 30% / 0.09;
+    --glass-bg: 72 28% 98% / 0.92;
+    --glass-border: 152 22% 42% / 0.55;
+    --glass-shadow: 160 35% 8% / 0.14;
 
-    --surface-elevated: 0 0% 100% / 0.55;
+    --surface-elevated: 0 0% 100% / 0.72;
 
-    --sidebar-background: 72 25% 88%;
-    --sidebar-foreground: 155 22% 22%;
-    --sidebar-primary: 152 11% 45%;
-    --sidebar-primary-foreground: 72 29% 97%;
-    --sidebar-accent: 72 22% 86%;
-    --sidebar-accent-foreground: 155 22% 18%;
-    --sidebar-border: 72 18% 78%;
-    --sidebar-ring: 152 11% 45%;
+    --sidebar-background: 72 22% 86%;
+    --sidebar-foreground: 160 32% 12%;
+    --sidebar-primary: 156 32% 28%;
+    --sidebar-primary-foreground: 72 40% 98%;
+    --sidebar-accent: 72 18% 80%;
+    --sidebar-accent-foreground: 160 32% 12%;
+    --sidebar-border: 152 20% 52%;
+    --sidebar-ring: 156 32% 32%;
   }
 }
 
@@ -91,10 +91,10 @@
     @apply text-foreground antialiased;
     font-family: "DM Sans", system-ui, sans-serif;
     background: linear-gradient(
-      165deg,
+      168deg,
       hsl(var(--brand-cream)) 0%,
-      hsl(72 28% 88%) 45%,
-      hsl(125 16% 82%) 100%
+      hsl(72 22% 84%) 38%,
+      hsl(155 18% 76%) 100%
     );
     background-attachment: fixed;
     min-height: 100vh;
@@ -104,34 +104,34 @@
 @layer utilities {
   .glass {
     background: linear-gradient(
-      145deg,
+      155deg,
       hsla(var(--glass-bg)),
-      hsla(0, 0%, 100%, 0.72)
+      hsla(72 30% 99% / 0.88)
     );
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid hsla(var(--glass-border));
     box-shadow:
-      0 1px 0 hsla(0, 0%, 100%, 0.65) inset,
-      0 18px 42px -12px hsla(var(--glass-shadow));
+      0 1px 0 hsl(0 0% 100% / 0.55) inset,
+      0 12px 40px -10px hsla(var(--glass-shadow));
   }
 
   .glass-subtle {
-    background: hsla(0, 0%, 100%, 0.42);
+    background: hsla(72 28% 97% / 0.75);
     backdrop-filter: blur(10px);
-    border: 1px solid hsla(72 18% 78%, 0.6);
+    border: 1px solid hsl(152 22% 48% / 0.45);
   }
 
   .surface-card {
-    @apply rounded-[var(--radius)] border border-border/80;
+    @apply rounded-[var(--radius)] border border-border;
     background: linear-gradient(
       180deg,
-      hsl(0 0% 100% / 0.88) 0%,
-      hsl(var(--card) / 0.95) 100%
+      hsl(0 0% 100% / 0.97) 0%,
+      hsl(var(--card) / 0.99) 100%
     );
     box-shadow:
-      0 1px 0 hsl(0 0% 100% / 0.9) inset,
-      0 14px 36px -16px hsl(152 18% 25% / 0.12);
+      0 1px 0 hsl(0 0% 100% / 0.85) inset,
+      0 16px 40px -14px hsl(160 32% 8% / 0.18);
   }
 
   .text-balance-safe {
@@ -139,6 +139,8 @@
   }
 
   .pipeline-glow {
-    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.25), 0 8px 28px -6px hsl(var(--primary) / 0.35);
+    box-shadow:
+      0 0 0 1px hsl(var(--primary) / 0.45),
+      0 10px 32px -8px hsl(var(--primary) / 0.42);
   }
 }

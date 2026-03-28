@@ -26,7 +26,7 @@ export default function TopBar({
     <motion.header
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="sticky top-0 z-50 border-b border-border/60 glass"
+      className="sticky top-0 z-50 border-b border-border glass"
     >
       <div className="mx-auto flex max-w-[1600px] flex-col gap-2 px-4 py-3 sm:px-5">
         <div className="flex flex-wrap items-center gap-3">
@@ -35,7 +35,7 @@ export default function TopBar({
               <span className="text-[1.05rem] font-semibold tracking-tight text-foreground transition-colors group-hover:text-primary sm:text-lg">
                 Quorum
               </span>
-              <span className="hidden rounded-full border border-border/80 bg-card/80 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground sm:inline">
+              <span className="hidden rounded-full border border-border bg-card px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground sm:inline">
                 AI Workflows
               </span>
             </Link>
@@ -89,7 +89,7 @@ export default function TopBar({
 
             <button
               type="button"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border/60 bg-card text-primary shadow-sm"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-card text-primary shadow-sm"
               aria-label="Account"
             >
               <User className="h-4 w-4" />

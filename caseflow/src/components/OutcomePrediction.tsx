@@ -93,15 +93,7 @@ export default function OutcomePrediction() {
     return Array.from(counts.entries()).sort((a, b) => b[1] - a[1]);
   }, [enrichedCases]);
 
-  const maxExposure = Math.max(...ranked.map((c) => c.predictedExposure), 1);
-
-  if (loading) {
-    return (
-      <div className="glass rounded-2xl p-8 text-center">
-        <p className="text-xs text-muted-foreground">Loading predictions...</p>
-      </div>
-    );
-  }
+  const maxExposure = Math.max(1, ...ranked.map((c) => c.predictedExposure));
 
   return (
     <motion.div

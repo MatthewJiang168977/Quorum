@@ -60,7 +60,7 @@ export default function NavbarPipeline({
                 className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border transition-all sm:h-9 sm:w-9 ${
                   isActive
                     ? "border-foreground/25 bg-primary text-primary-foreground pipeline-glow"
-                    : "border-border/80 bg-card/90 text-muted-foreground group-hover:border-primary/30 group-hover:text-foreground"
+                    : "border-border bg-card text-muted-foreground group-hover:border-primary group-hover:text-foreground"
                 }`}
               >
                 <Icon className="h-3.5 w-3.5 sm:h-4 sm:w-4" strokeWidth={2} />
