@@ -10,7 +10,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 // Scores case based on problem severity, urgency, and who filed
 // ============================================================
 async function scoreCaseSeverity(caseData, message) {
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const prompt = `You are a case severity scoring agent for a U.S. Congressional office. 
 Score this constituent case on multiple dimensions. Return ONLY valid JSON.
@@ -69,7 +69,7 @@ Score each dimension 1-10 and provide reasoning:
 // Transcribes and extracts key points from meeting notes/audio
 // ============================================================
 async function processMeetingNotes(notesInput) {
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   // notesInput can be { text: "..." } or { audioTranscript: "..." }
   const content = notesInput.text || notesInput.audioTranscript || "";
@@ -230,7 +230,7 @@ async function matchEmployee(caseData, severityResult, meetingResult) {
   scoredEmployees.sort((a, b) => b.score - a.score);
 
   // Step 4: Use Gemini to generate natural language reasoning
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const top3 = scoredEmployees.slice(0, 3);
 

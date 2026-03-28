@@ -44,7 +44,7 @@ Respond ONLY with the draft text, no JSON or markdown wrapping.`;
 
 async function triageMessage(message) {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `${TRIAGE_PROMPT}
 
@@ -92,7 +92,7 @@ Body: ${message.body}`;
 
 async function generateDraft(message, aiTags) {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `${DRAFT_PROMPT}
 

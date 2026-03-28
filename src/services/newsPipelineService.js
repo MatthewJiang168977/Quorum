@@ -9,7 +9,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 // Takes news articles and extracts sentiment + relevance to district
 // ============================================================
 async function analyzeNewsArticle(article) {
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const prompt = `You are a political analyst for a U.S. Congressional office in Illinois (District IL-13, Springfield area).
 
@@ -155,7 +155,7 @@ async function updateSentimentParams(newsAnalysis) {
 // Given news, predict which constituents will reach out
 // ============================================================
 async function predictConstituentImpact(newsAnalysis) {
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const topArticles = (newsAnalysis.analyses || [])
     .slice(0, 5)

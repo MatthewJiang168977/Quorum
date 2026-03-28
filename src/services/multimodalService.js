@@ -10,7 +10,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 // Supports: mp3, wav, ogg, flac, m4a
 // ============================================================
 async function processAudio(audioBuffer, mimeType, context) {
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const audioData = {
     inlineData: {
@@ -73,7 +73,7 @@ ${context?.additionalInstructions || ""}`;
 // Handles scanned paper cases, handwritten letters, forms
 // ============================================================
 async function processImage(imageBuffer, mimeType, context) {
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const imageData = {
     inlineData: {
@@ -142,7 +142,7 @@ ${context?.additionalInstructions || ""}`;
 // For PDF uploads — pass as image pages or extracted text
 // ============================================================
 async function processDocument(documentBuffer, mimeType, context) {
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const docData = {
     inlineData: {
