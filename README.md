@@ -75,7 +75,7 @@ All three AI agents run in parallel. One API call triggers the full pipeline.
 - Enterprise operations and compliance teams
 
 ---
-
+<!-- 
 ## Market opportunity
 
 | Segment | Size |
@@ -87,7 +87,7 @@ All three AI agents run in parallel. One API call triggers the full pipeline.
 Legal tech alone is a $30B+ market. Workflow automation is the fastest-growing segment.
 
 ---
-
+-->
 ## Business model
 
 - SaaS subscriptions (per seat + per case volume)
