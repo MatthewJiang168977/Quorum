@@ -24,7 +24,7 @@ exports.getCases = async (req, res) => {
         .skip(skip)
         .limit(parseInt(limit))
         .populate("assignedTo", "name role")
-        .populate("messageId", "subject from")
+        .populate("messageId")
         .lean(),
       Case.countDocuments(filter),
     ]);
